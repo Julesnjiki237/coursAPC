@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1736997804 source:c:\users\the checker\documents\enspm\tpe\architecture et système d'exploitation\testcours\libry.c
+	"libry.h"
+
+1736997848 c:\users\the checker\documents\enspm\tpe\architecture et système d'exploitation\testcours\libry.h
+
+1736997822 source:c:\users\the checker\documents\enspm\tpe\architecture et système d'exploitation\testcours\main.c
+	<stdio.h>
+	<stdlib.h>
+	"libry.h"
+
