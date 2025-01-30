@@ -3,12 +3,12 @@
 #include <stdbool.h>
 
 #define MAX_ENSEIGNANTS 20
-#define MAX_CODE 6
+#define MAX_CODE 12
 #define MAX_NOM 26
 #define MAX_PRENOM 26
 #define MAX_GRADE 26
 
-// Définition de la structure Enseignant
+// DÃ©finition de la structure Enseignant
 typedef struct {
     char code[MAX_CODE];
     char nom[MAX_NOM];
@@ -17,7 +17,7 @@ typedef struct {
     char sexe;
 } Enseignant;
 
-// Fonction pour créer un vecteur d'enseignants
+// Fonction pour crÃ©er un vecteur d'enseignants
 void creerEnseignants(Enseignant *vecteur, int n) {
     for (int i = 0; i < n; i++) {
         printf("\nEnseignant %d:\n", i + 1);
@@ -39,7 +39,7 @@ void creerEnseignants(Enseignant *vecteur, int n) {
     }
 }
 
-// Fonction pour vérifier si un enseignant existe
+// Fonction pour vÃ©rifier si un enseignant existe
 void verifierEnseignant(Enseignant *vecteur, int n, Enseignant u) {
     bool existe = false;
 
@@ -51,9 +51,9 @@ void verifierEnseignant(Enseignant *vecteur, int n, Enseignant u) {
     }
 
     if (existe) {
-        printf("\nCet enseignant existe dans la base de données.\n");
+        printf("\nCet enseignant existe dans la base de donnÃ©es.\n");
     } else {
-        printf("\nCet enseignant n'existe pas dans la base de données.\n");
+        printf("\nCet enseignant n'existe pas dans la base de donnÃ©es.\n");
     }
 }
 
@@ -74,7 +74,7 @@ void listerParSexe(Enseignant *vecteur, int n, char sexe) {
     }
 
     if (!trouve) {
-        printf("Aucun enseignant trouvé pour ce sexe.\n");
+        printf("Aucun enseignant trouvÃ© pour ce sexe.\n");
     }
 }
 
@@ -90,10 +90,10 @@ int main() {
         return 1;
     }
 
-    // Création du vecteur d'enseignants
+    // CrÃ©ation du vecteur d'enseignants
     creerEnseignants(vecteur, nombreEnseignants);
 
-    // Exemple d'utilisation de la vérification
+    // Exemple d'utilisation de la vÃ©rification
     Enseignant recherche;
     printf("\nRecherche d'un enseignant\n");
     printf("Entrez le code: ");
